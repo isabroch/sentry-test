@@ -29,6 +29,7 @@ const call = {
   from: "99004858",
   showDetails: function() {
     const message = `${this.from} is calling ${this.to}`;
+    console.log(message);
     return message;
   }
 }
