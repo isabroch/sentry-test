@@ -5,7 +5,7 @@
 
 // [1] TypeError: "x" has no properties OR TypeError: can't access property "x" of "y"
 var er1 = undefined; // pretend foo is the result of a function
-er1.substring(1);
+// er1.substring(1);
 er1.bar;
 
 // [2] TypeError: "x" is not a function
