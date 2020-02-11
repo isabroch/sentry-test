@@ -1,5 +1,4 @@
-//#region TYPE ERROR
-/*
+/* TYPE ERRORS
 * MDN [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError]
   The TypeError object represents an error when an operation could not be performed, typically (but not exclusively) when a value is not of the expected type.
 */
@@ -10,7 +9,7 @@ er1.substring(1);
 er1.bar;
 
 // [2] TypeError: "x" is not a function
-var er2 = document.getElementByID('typo') // should be ...ById (notice capitalization)
+document.getElementByID('typo') // should be ...ById (notice capitalization)
 
 // [3] TypeError: 'x' is not iterable
 const er3 = { firstName: 'John', lastName: 'Smith' };
@@ -19,11 +18,8 @@ er3.foreach( el => { console.log(el) })
 // [4] TypeError: invalid assignment to const "x"
 const color = red;
 color = white;
-const color = blue;
-//#endregion
 
-//#region REFERENCE ERROR
-/*
+/* REFERENCE ERRORS
 // error one - fixed
 let refError = "undefinedVariable";
 
@@ -68,4 +64,3 @@ function runFunction() { return 'Does this exist yet?'}
 document.querySelector('#error').addEventListener('click', function(e) {
   console.log(this.value);
 }); */
-//#endregion
