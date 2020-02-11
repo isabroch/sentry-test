@@ -3,8 +3,8 @@
 let refError = "undefinedVariable";
 
 // error two
-(function add(a, b) {
-  return a + b + c;
+(function add() {
+  return [...arguments].reduce( (acc, cur) => acc + cur );
 })(5,4,3)
 
 //error three
