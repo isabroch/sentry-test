@@ -27,7 +27,7 @@ number = index;
 const call = {
   to: "61121066",
   from: "99004858",
-  showDetails: () => {
+  showDetails: function() {
     const message = `${this.from} is calling ${this.to}`;
     return message;
   }
@@ -35,8 +35,8 @@ const call = {
 call.showDetails();
 
 // error six
-console.log(runFunction());
-const runFunction = () => { return 'Does this exist yet?'}
+// console.log(runFunction());
+// const runFunction = () => { return 'Does this exist yet?'}
 
 // error seven
 document.querySelector('#error').addEventListener('click', (e) => {
