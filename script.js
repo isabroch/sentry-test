@@ -18,8 +18,8 @@ for (const el in er3) {
 }
 
 // [4] TypeError: invalid assignment to const "x"
-const color = red;
-color = white;
+const color = 'red';
+color = 'white';
 
 /* REFERENCE ERRORS
 // error one - fixed
