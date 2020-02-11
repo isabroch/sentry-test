@@ -37,3 +37,8 @@ call.showDetails();
 // error six
 console.log(runFunction());
 const runFunction = () => { return 'Does this exist yet?'}
+
+// error seven
+document.querySelector('#error').addEventListener('click', (e) => {
+  console.log(this.value);
+});
