@@ -4,16 +4,18 @@
 */
 
 // [1] TypeError: "x" has no properties OR TypeError: can't access property "x" of "y"
-var er1 = undefined; // pretend foo is the result of a function
-// er1.substring(1);
-// er1.bar;
+var er1 = 'red'; // pretend foo is the result of a function
+er1.substring(1);
+er1.bar;
 
 // [2] TypeError: "x" is not a function
-// document.getElementByID('typo') // should be ...ById (notice capitalization)
+document.getElementById('typo')
 
 // [3] TypeError: 'x' is not iterable
 const er3 = { firstName: 'John', lastName: 'Smith' };
-// er3.foreach( el => { console.log(el) })
+for (const el in er3) {
+ console.log(el);
+}
 
 // [4] TypeError: invalid assignment to const "x"
 const color = red;
