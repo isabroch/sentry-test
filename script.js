@@ -9,7 +9,8 @@ let refError = "undefinedVariable";
 
 //error three
 let number;
-for (let index = 0; index < 5; index++) {
+let index;
+for (index = 0; index < 5; index++) {
   number = index;
 }
 number = index;
