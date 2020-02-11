@@ -1,6 +1,6 @@
 // ! REFERENCE ERRORS
 // error one
-let refError = undefinedVariable;
+let refError = "undefinedVariable";
 
 // error two
 (function add(a, b) {
