@@ -13,7 +13,7 @@ var er1 = undefined; // pretend foo is the result of a function
 
 // [3] TypeError: 'x' is not iterable
 const er3 = { firstName: 'John', lastName: 'Smith' };
-er3.foreach( el => { console.log(el) })
+// er3.foreach( el => { console.log(el) })
 
 // [4] TypeError: invalid assignment to const "x"
 const color = red;
