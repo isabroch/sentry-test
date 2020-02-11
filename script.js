@@ -1,6 +1,6 @@
 // ! REFERENCE ERRORS
-/* // error one
-let refError = undefinedVariable; */
+// error one
+let refError = undefinedVariable;
 
 /* // error two
 (function add(a, b) {
@@ -14,15 +14,15 @@ for (let index = 0; index < 5; index++) {
 }
 number = index; */
 
-// error four
+/* // error four
 (function () {
   const a = 1;
   const b = 2;
   return a + b;
 })()
-console.log(a);
+console.log(a); */
 
-// error five
+/* // error five
 const call = {
   to: "61121066",
   from: "99004858",
@@ -31,4 +31,4 @@ const call = {
     return message;
   }
 }
-call.showDetails();
+call.showDetails(); */
