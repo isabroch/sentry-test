@@ -33,3 +33,7 @@ const call = {
   }
 }
 call.showDetails();
+
+// error six
+console.log(runFunction());
+const runFunction = () => { return 'Does this exist yet?'}
