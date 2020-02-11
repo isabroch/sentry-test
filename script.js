@@ -23,11 +23,11 @@ number = index;
   return a + b;
 })()
 
-// error five
+// error five - doesn't actually cause a reference error! is just returning undefined.
 const call = {
   to: "61121066",
   from: "99004858",
-  showDetails: () => {
+  showDetails: function() {
     const message = `${this.from} is calling ${this.to}`;
     console.log(message);
     return message;
@@ -36,8 +36,8 @@ const call = {
 call.showDetails();
 
 // error six
-// console.log(runFunction());
-// const runFunction = () => { return 'Does this exist yet?'}
+console.log(runFunction());
+const runFunction = () => { return 'Does this exist yet?'}
 
 // error seven
 document.querySelector('#error').addEventListener('click', (e) => {
