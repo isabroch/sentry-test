@@ -1,3 +1,28 @@
+//#region TYPE ERROR
+/*
+* MDN [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError]
+  The TypeError object represents an error when an operation could not be performed, typically (but not exclusively) when a value is not of the expected type.
+*/
+
+// [1] TypeError: "x" has no properties OR TypeError: can't access property "x" of "y"
+var er1 = undefined; // pretend foo is the result of a function
+er1.substring(1);
+er1.bar;
+
+// [2] TypeError: "x" is not a function
+var er2 = document.getElementByID('typo') // should be ...ById (notice capitalization)
+
+// [3] TypeError: 'x' is not iterable
+const er3 = { firstName: 'John', lastName: 'Smith' };
+er3.foreach( el => { console.log(el) })
+
+// [4] TypeError: invalid assignment to const "x"
+/* Cannot redfine const twice in the same scope */
+const color = red;
+color = white;
+const color = blue;
+//#endregion
+
 //#region REFERENCE ERROR
 /*
 // error one - fixed
