@@ -1,4 +1,4 @@
-// ! REFERENCE ERRORS
+/* // ! REFERENCE ERRORS
 // error one - fixed
 let refError = "undefinedVariable";
 
@@ -23,7 +23,7 @@ number = index;
   return a + b;
 })()
 
-// error five - doesn't actually cause a reference error! is just returning undefined.
+// error five - doesn't actually cause a reference error! is just getting 'undefined'.
 const call = {
   to: "61121066",
   from: "99004858",
@@ -39,7 +39,7 @@ call.showDetails();
 console.log(runFunction());
 function runFunction() { return 'Does this exist yet?'}
 
-// error seven
-document.querySelector('#error').addEventListener('click', (e) => {
+// error seven - doesn't actually cause reference error! is just getting 'undefined'.
+document.querySelector('#error').addEventListener('click', function(e) {
   console.log(this.value);
-});
+}); */
