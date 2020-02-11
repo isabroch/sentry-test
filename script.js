@@ -27,7 +27,7 @@ number = index;
 const call = {
   to: "61121066",
   from: "99004858",
-  showDetails: function() {
+  showDetails: () => {
     const message = `${this.from} is calling ${this.to}`;
     console.log(message);
     return message;
