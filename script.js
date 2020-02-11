@@ -35,9 +35,9 @@ const call = {
 }
 call.showDetails();
 
-// error six
+// error six - fix! alternative fix: define function before calling.
 console.log(runFunction());
-const runFunction = () => { return 'Does this exist yet?'}
+function runFunction() { return 'Does this exist yet?'}
 
 // error seven
 document.querySelector('#error').addEventListener('click', (e) => {
