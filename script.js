@@ -1,4 +1,5 @@
-/* // ! REFERENCE ERRORS
+//#region REFERENCE ERROR
+/*
 // error one - fixed
 let refError = "undefinedVariable";
 
@@ -43,3 +44,4 @@ function runFunction() { return 'Does this exist yet?'}
 document.querySelector('#error').addEventListener('click', function(e) {
   console.log(this.value);
 }); */
+//#endregion
