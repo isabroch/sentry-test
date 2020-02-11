@@ -1,13 +1,13 @@
 // ! REFERENCE ERRORS
-// error one
+// error one - fixed
 let refError = "undefinedVariable";
 
-// error two
+// error two - fixed
 (function add() {
   return [...arguments].reduce( (acc, cur) => acc + cur );
 })(5,4,3)
 
-//error three
+//error three - fixed
 let number;
 let index;
 for (index = 0; index < 5; index++) {
