@@ -17,7 +17,6 @@ const er3 = { firstName: 'John', lastName: 'Smith' };
 er3.foreach( el => { console.log(el) })
 
 // [4] TypeError: invalid assignment to const "x"
-/* Cannot redfine const twice in the same scope */
 const color = red;
 color = white;
 const color = blue;
