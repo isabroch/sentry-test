@@ -9,7 +9,7 @@ var er1 = undefined; // pretend foo is the result of a function
 // er1.bar;
 
 // [2] TypeError: "x" is not a function
-document.getElementByID('typo') // should be ...ById (notice capitalization)
+// document.getElementByID('typo') // should be ...ById (notice capitalization)
 
 // [3] TypeError: 'x' is not iterable
 const er3 = { firstName: 'John', lastName: 'Smith' };
