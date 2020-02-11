@@ -15,13 +15,13 @@ for (index = 0; index < 5; index++) {
 }
 number = index;
 
-// error four
+// error four - fixed
 (function () {
   const a = 1;
   const b = 2;
+  console.log(a);
   return a + b;
 })()
-console.log(a);
 
 // error five
 const call = {
