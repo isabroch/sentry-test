@@ -1,11 +1,11 @@
 // ! REFERENCE ERRORS
-// error one
-let refError = undefinedVariable;
+/* // error one
+let refError = undefinedVariable; */
 
-// error two
+/* // error two
 (function add(a, b) {
   return a + b + c;
-})(5,4,3)
+})(5,4,3) */
 
 //error three
 let number;
